@@ -1,0 +1,11 @@
+channels:
+- conda-forge
+dependencies:
+- r-base=4.4.1
+- pandoc
+- r-curl
+- r-rsqlite
+- r-xml2
+- r-httpuv
+- r-mass
+- r-matrix

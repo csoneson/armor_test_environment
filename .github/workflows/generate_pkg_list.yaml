@@ -28,13 +28,14 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2
 
-      - name: Set up miniforge and build environment (non-Windows)
+      - name: Set up miniforge and build environment
         uses: conda-incubator/setup-miniconda@v3
         with:
           miniforge-version: latest
-          activate-environment: ./env_r432
-          environment-file: env_r432.yaml
+          activate-environment: ./env_r441
+          environment-file: env_r441.yaml
+          channels: conda-forge
 
       - name: List content of environment
-        run: conda list -p ./env_r432
+        run: conda list -p ./env_r441
 
