@@ -36,5 +36,5 @@ jobs:
           environment-file: env_r432.yaml
 
       - name: List content of environment
-        run: conda list -p ./testenv
+        run: conda list -p ./env_r432
 
